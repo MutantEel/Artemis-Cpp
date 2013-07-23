@@ -1,0 +1,14 @@
+--style=allman
+--indent=force-tab
+--break-blocks=all
+--add-brackets
+--break-after-logical
+--mode=c
+--indent-classes
+--indent-switches
+--indent-namespaces
+--indent-col1-comments
+--pad-oper
+--align-pointer=type
+--suffix=none
+-z2

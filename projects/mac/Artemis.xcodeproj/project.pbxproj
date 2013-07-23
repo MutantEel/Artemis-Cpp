@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14EF5737179EDA4C004B6740 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14EF5735179EDA4C004B6740 /* InfoPlist.strings */; };
+		14EF5755179EDABA004B6740 /* BitSize.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5743179EDABA004B6740 /* BitSize.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5756179EDABA004B6740 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5744179EDABA004B6740 /* Component.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5757179EDABA004B6740 /* ComponentMapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5745179EDABA004B6740 /* ComponentMapper.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5758179EDABA004B6740 /* ComponentType.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5746179EDABA004B6740 /* ComponentType.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5759179EDABA004B6740 /* ComponentTypeManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5747179EDABA004B6740 /* ComponentTypeManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF575A179EDABA004B6740 /* DelayedEntityProcessingSystem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5748179EDABA004B6740 /* DelayedEntityProcessingSystem.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF575B179EDABA004B6740 /* DelayedEntitySystem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5749179EDABA004B6740 /* DelayedEntitySystem.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF575C179EDABA004B6740 /* Entity.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF574A179EDABA004B6740 /* Entity.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF575D179EDABA004B6740 /* EntityManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF574B179EDABA004B6740 /* EntityManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF575E179EDABA004B6740 /* EntityProcessingSystem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF574C179EDABA004B6740 /* EntityProcessingSystem.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF575F179EDABA004B6740 /* EntitySystem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF574D179EDABA004B6740 /* EntitySystem.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5760179EDABA004B6740 /* GroupManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF574E179EDABA004B6740 /* GroupManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5761179EDABA004B6740 /* ImmutableBag.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF574F179EDABA004B6740 /* ImmutableBag.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5762179EDABA004B6740 /* SystemBitManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5750179EDABA004B6740 /* SystemBitManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5763179EDABA004B6740 /* SystemManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5751179EDABA004B6740 /* SystemManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5764179EDABA004B6740 /* TagManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5752179EDABA004B6740 /* TagManager.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5765179EDABA004B6740 /* TypeInfoComparator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5753179EDABA004B6740 /* TypeInfoComparator.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5766179EDABA004B6740 /* World.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 14EF5754179EDABA004B6740 /* World.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		14EF5776179EDAD2004B6740 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5768179EDAD2004B6740 /* Component.cpp */; };
+		14EF5777179EDAD2004B6740 /* ComponentType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5769179EDAD2004B6740 /* ComponentType.cpp */; };
+		14EF5778179EDAD2004B6740 /* ComponentTypeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF576A179EDAD2004B6740 /* ComponentTypeManager.cpp */; };
+		14EF5779179EDAD2004B6740 /* DelayedEntityProcessingSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF576B179EDAD2004B6740 /* DelayedEntityProcessingSystem.cpp */; };
+		14EF577A179EDAD2004B6740 /* DelayedEntitySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF576C179EDAD2004B6740 /* DelayedEntitySystem.cpp */; };
+		14EF577B179EDAD2004B6740 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF576D179EDAD2004B6740 /* Entity.cpp */; };
+		14EF577C179EDAD2004B6740 /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF576E179EDAD2004B6740 /* EntityManager.cpp */; };
+		14EF577D179EDAD2004B6740 /* EntityProcessingSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF576F179EDAD2004B6740 /* EntityProcessingSystem.cpp */; };
+		14EF577E179EDAD2004B6740 /* EntitySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5770179EDAD2004B6740 /* EntitySystem.cpp */; };
+		14EF577F179EDAD2004B6740 /* GroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5771179EDAD2004B6740 /* GroupManager.cpp */; };
+		14EF5780179EDAD2004B6740 /* SystemBitManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5772179EDAD2004B6740 /* SystemBitManager.cpp */; };
+		14EF5781179EDAD2004B6740 /* SystemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5773179EDAD2004B6740 /* SystemManager.cpp */; };
+		14EF5782179EDAD2004B6740 /* TagManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5774179EDAD2004B6740 /* TagManager.cpp */; };
+		14EF5783179EDAD2004B6740 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5775179EDAD2004B6740 /* World.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14EF5729179EDA4C004B6740 /* Artemis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Artemis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14EF5734179EDA4C004B6740 /* Artemis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Artemis-Info.plist"; sourceTree = "<group>"; };
+		14EF5736179EDA4C004B6740 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14EF5743179EDABA004B6740 /* BitSize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BitSize.hpp; sourceTree = "<group>"; };
+		14EF5744179EDABA004B6740 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+		14EF5745179EDABA004B6740 /* ComponentMapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComponentMapper.hpp; sourceTree = "<group>"; };
+		14EF5746179EDABA004B6740 /* ComponentType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComponentType.hpp; sourceTree = "<group>"; };
+		14EF5747179EDABA004B6740 /* ComponentTypeManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComponentTypeManager.hpp; sourceTree = "<group>"; };
+		14EF5748179EDABA004B6740 /* DelayedEntityProcessingSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DelayedEntityProcessingSystem.hpp; sourceTree = "<group>"; };
+		14EF5749179EDABA004B6740 /* DelayedEntitySystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DelayedEntitySystem.hpp; sourceTree = "<group>"; };
+		14EF574A179EDABA004B6740 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
+		14EF574B179EDABA004B6740 /* EntityManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntityManager.hpp; sourceTree = "<group>"; };
+		14EF574C179EDABA004B6740 /* EntityProcessingSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntityProcessingSystem.hpp; sourceTree = "<group>"; };
+		14EF574D179EDABA004B6740 /* EntitySystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntitySystem.hpp; sourceTree = "<group>"; };
+		14EF574E179EDABA004B6740 /* GroupManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GroupManager.hpp; sourceTree = "<group>"; };
+		14EF574F179EDABA004B6740 /* ImmutableBag.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImmutableBag.hpp; sourceTree = "<group>"; };
+		14EF5750179EDABA004B6740 /* SystemBitManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SystemBitManager.hpp; sourceTree = "<group>"; };
+		14EF5751179EDABA004B6740 /* SystemManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SystemManager.hpp; sourceTree = "<group>"; };
+		14EF5752179EDABA004B6740 /* TagManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TagManager.hpp; sourceTree = "<group>"; };
+		14EF5753179EDABA004B6740 /* TypeInfoComparator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TypeInfoComparator.hpp; sourceTree = "<group>"; };
+		14EF5754179EDABA004B6740 /* World.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
+		14EF5768179EDAD2004B6740 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		14EF5769179EDAD2004B6740 /* ComponentType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentType.cpp; sourceTree = "<group>"; };
+		14EF576A179EDAD2004B6740 /* ComponentTypeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentTypeManager.cpp; sourceTree = "<group>"; };
+		14EF576B179EDAD2004B6740 /* DelayedEntityProcessingSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DelayedEntityProcessingSystem.cpp; sourceTree = "<group>"; };
+		14EF576C179EDAD2004B6740 /* DelayedEntitySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DelayedEntitySystem.cpp; sourceTree = "<group>"; };
+		14EF576D179EDAD2004B6740 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		14EF576E179EDAD2004B6740 /* EntityManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityManager.cpp; sourceTree = "<group>"; };
+		14EF576F179EDAD2004B6740 /* EntityProcessingSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityProcessingSystem.cpp; sourceTree = "<group>"; };
+		14EF5770179EDAD2004B6740 /* EntitySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntitySystem.cpp; sourceTree = "<group>"; };
+		14EF5771179EDAD2004B6740 /* GroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupManager.cpp; sourceTree = "<group>"; };
+		14EF5772179EDAD2004B6740 /* SystemBitManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemBitManager.cpp; sourceTree = "<group>"; };
+		14EF5773179EDAD2004B6740 /* SystemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemManager.cpp; sourceTree = "<group>"; };
+		14EF5774179EDAD2004B6740 /* TagManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TagManager.cpp; sourceTree = "<group>"; };
+		14EF5775179EDAD2004B6740 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14EF5725179EDA4C004B6740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14EF571F179EDA4C004B6740 = {
+			isa = PBXGroup;
+			children = (
+				14EF5732179EDA4C004B6740 /* Artemis */,
+				14EF572B179EDA4C004B6740 /* Frameworks */,
+				14EF572A179EDA4C004B6740 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14EF572A179EDA4C004B6740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14EF5729179EDA4C004B6740 /* Artemis.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14EF572B179EDA4C004B6740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14EF5732179EDA4C004B6740 /* Artemis */ = {
+			isa = PBXGroup;
+			children = (
+				14EF5767179EDAC2004B6740 /* src */,
+				14EF5741179EDA6A004B6740 /* include */,
+				14EF5733179EDA4C004B6740 /* Supporting Files */,
+			);
+			path = Artemis;
+			sourceTree = "<group>";
+		};
+		14EF5733179EDA4C004B6740 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14EF5734179EDA4C004B6740 /* Artemis-Info.plist */,
+				14EF5735179EDA4C004B6740 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14EF5741179EDA6A004B6740 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				14EF5742179EDAA8004B6740 /* Artemis */,
+			);
+			name = include;
+			path = ../../../include;
+			sourceTree = "<group>";
+		};
+		14EF5742179EDAA8004B6740 /* Artemis */ = {
+			isa = PBXGroup;
+			children = (
+				14EF5743179EDABA004B6740 /* BitSize.hpp */,
+				14EF5744179EDABA004B6740 /* Component.hpp */,
+				14EF5745179EDABA004B6740 /* ComponentMapper.hpp */,
+				14EF5746179EDABA004B6740 /* ComponentType.hpp */,
+				14EF5747179EDABA004B6740 /* ComponentTypeManager.hpp */,
+				14EF5748179EDABA004B6740 /* DelayedEntityProcessingSystem.hpp */,
+				14EF5749179EDABA004B6740 /* DelayedEntitySystem.hpp */,
+				14EF574A179EDABA004B6740 /* Entity.hpp */,
+				14EF574B179EDABA004B6740 /* EntityManager.hpp */,
+				14EF574C179EDABA004B6740 /* EntityProcessingSystem.hpp */,
+				14EF574D179EDABA004B6740 /* EntitySystem.hpp */,
+				14EF574E179EDABA004B6740 /* GroupManager.hpp */,
+				14EF574F179EDABA004B6740 /* ImmutableBag.hpp */,
+				14EF5750179EDABA004B6740 /* SystemBitManager.hpp */,
+				14EF5751179EDABA004B6740 /* SystemManager.hpp */,
+				14EF5752179EDABA004B6740 /* TagManager.hpp */,
+				14EF5753179EDABA004B6740 /* TypeInfoComparator.hpp */,
+				14EF5754179EDABA004B6740 /* World.hpp */,
+			);
+			path = Artemis;
+			sourceTree = "<group>";
+		};
+		14EF5767179EDAC2004B6740 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				14EF5768179EDAD2004B6740 /* Component.cpp */,
+				14EF5769179EDAD2004B6740 /* ComponentType.cpp */,
+				14EF576A179EDAD2004B6740 /* ComponentTypeManager.cpp */,
+				14EF576B179EDAD2004B6740 /* DelayedEntityProcessingSystem.cpp */,
+				14EF576C179EDAD2004B6740 /* DelayedEntitySystem.cpp */,
+				14EF576D179EDAD2004B6740 /* Entity.cpp */,
+				14EF576E179EDAD2004B6740 /* EntityManager.cpp */,
+				14EF576F179EDAD2004B6740 /* EntityProcessingSystem.cpp */,
+				14EF5770179EDAD2004B6740 /* EntitySystem.cpp */,
+				14EF5771179EDAD2004B6740 /* GroupManager.cpp */,
+				14EF5772179EDAD2004B6740 /* SystemBitManager.cpp */,
+				14EF5773179EDAD2004B6740 /* SystemManager.cpp */,
+				14EF5774179EDAD2004B6740 /* TagManager.cpp */,
+				14EF5775179EDAD2004B6740 /* World.cpp */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14EF5726179EDA4C004B6740 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14EF5755179EDABA004B6740 /* BitSize.hpp in Headers */,
+				14EF5756179EDABA004B6740 /* Component.hpp in Headers */,
+				14EF5757179EDABA004B6740 /* ComponentMapper.hpp in Headers */,
+				14EF5758179EDABA004B6740 /* ComponentType.hpp in Headers */,
+				14EF5759179EDABA004B6740 /* ComponentTypeManager.hpp in Headers */,
+				14EF575A179EDABA004B6740 /* DelayedEntityProcessingSystem.hpp in Headers */,
+				14EF575B179EDABA004B6740 /* DelayedEntitySystem.hpp in Headers */,
+				14EF575C179EDABA004B6740 /* Entity.hpp in Headers */,
+				14EF575D179EDABA004B6740 /* EntityManager.hpp in Headers */,
+				14EF575E179EDABA004B6740 /* EntityProcessingSystem.hpp in Headers */,
+				14EF575F179EDABA004B6740 /* EntitySystem.hpp in Headers */,
+				14EF5760179EDABA004B6740 /* GroupManager.hpp in Headers */,
+				14EF5761179EDABA004B6740 /* ImmutableBag.hpp in Headers */,
+				14EF5762179EDABA004B6740 /* SystemBitManager.hpp in Headers */,
+				14EF5763179EDABA004B6740 /* SystemManager.hpp in Headers */,
+				14EF5764179EDABA004B6740 /* TagManager.hpp in Headers */,
+				14EF5765179EDABA004B6740 /* TypeInfoComparator.hpp in Headers */,
+				14EF5766179EDABA004B6740 /* World.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14EF5728179EDA4C004B6740 /* Artemis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14EF573E179EDA4C004B6740 /* Build configuration list for PBXNativeTarget "Artemis" */;
+			buildPhases = (
+				14EF5724179EDA4C004B6740 /* Sources */,
+				14EF5725179EDA4C004B6740 /* Frameworks */,
+				14EF5726179EDA4C004B6740 /* Headers */,
+				14EF5727179EDA4C004B6740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artemis;
+			productName = Artemis;
+			productReference = 14EF5729179EDA4C004B6740 /* Artemis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14EF5720179EDA4C004B6740 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mutant Eel";
+			};
+			buildConfigurationList = 14EF5723179EDA4C004B6740 /* Build configuration list for PBXProject "Artemis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14EF571F179EDA4C004B6740;
+			productRefGroup = 14EF572A179EDA4C004B6740 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14EF5728179EDA4C004B6740 /* Artemis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14EF5727179EDA4C004B6740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14EF5737179EDA4C004B6740 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14EF5724179EDA4C004B6740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14EF5776179EDAD2004B6740 /* Component.cpp in Sources */,
+				14EF5777179EDAD2004B6740 /* ComponentType.cpp in Sources */,
+				14EF5778179EDAD2004B6740 /* ComponentTypeManager.cpp in Sources */,
+				14EF5779179EDAD2004B6740 /* DelayedEntityProcessingSystem.cpp in Sources */,
+				14EF577A179EDAD2004B6740 /* DelayedEntitySystem.cpp in Sources */,
+				14EF577B179EDAD2004B6740 /* Entity.cpp in Sources */,
+				14EF577C179EDAD2004B6740 /* EntityManager.cpp in Sources */,
+				14EF577D179EDAD2004B6740 /* EntityProcessingSystem.cpp in Sources */,
+				14EF577E179EDAD2004B6740 /* EntitySystem.cpp in Sources */,
+				14EF577F179EDAD2004B6740 /* GroupManager.cpp in Sources */,
+				14EF5780179EDAD2004B6740 /* SystemBitManager.cpp in Sources */,
+				14EF5781179EDAD2004B6740 /* SystemManager.cpp in Sources */,
+				14EF5782179EDAD2004B6740 /* TagManager.cpp in Sources */,
+				14EF5783179EDAD2004B6740 /* World.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14EF5735179EDA4C004B6740 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14EF5736179EDA4C004B6740 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14EF573C179EDA4C004B6740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		14EF573D179EDA4C004B6740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		14EF573F179EDA4C004B6740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "Artemis/Artemis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		14EF5740179EDA4C004B6740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "Artemis/Artemis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14EF5723179EDA4C004B6740 /* Build configuration list for PBXProject "Artemis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14EF573C179EDA4C004B6740 /* Debug */,
+				14EF573D179EDA4C004B6740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14EF573E179EDA4C004B6740 /* Build configuration list for PBXNativeTarget "Artemis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14EF573F179EDA4C004B6740 /* Debug */,
+				14EF5740179EDA4C004B6740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14EF5720179EDA4C004B6740 /* Project object */;
+}
