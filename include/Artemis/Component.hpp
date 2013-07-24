@@ -5,7 +5,7 @@
 
 namespace artemis
 {
-	
+
 	/**
 	 * A tag class. All components in the system must extend this class.
 	 */
@@ -34,7 +34,7 @@ public: virtual Component* clone()\
 {\
 return new name();\
 }\
-
+ 
 
 #define ARTEMIS_SERIALIZE_START \
 public: virtual Json::Value serialize() \
@@ -63,7 +63,7 @@ return;\
 #define ARTEMIS_DESERIALIZE_END \
 }
 
-//possible types are Bool, CString, Double, Float, Int, Int64, String, UInt, UInt64 
+//possible types are Bool, CString, Double, Float, Int, Int64, String, UInt, UInt64
 #define ARTEMIS_DESERIALIZE(var, type, defaultValue) \
 if(data.isMember(#var) && data[#var].is##type())\
 {\

@@ -114,39 +114,40 @@ namespace artemis
 	{
 		world->getTagManager()->subscribe(tag, *this);
 	}
-	
+
 	Json::Value Entity::serialize()
 	{
 		ImmutableBag<Component*>& comps = getComponents();
 		Json::Value result;
-		
+
 		//serialize all component
 		for(int i = 0; i < comps.getCount(); i++)
 		{
 			Component* c = comps.get(i);
-			
+
 			if(c && c->getTypeName())
 			{
 				result[c->getTypeName()] = c->serialize();
 			}
 		}
-		
+
 		return result;
 	}
-	
+
 	void Entity::deserialize(Json::Value data)
 	{
 		if(data.isNull() || !data.isObject())
 		{
 			return;
 		}
-		
+
 		//create components and deserialize all members
 		Json::Value::Members members = data.getMemberNames();
+
 		for(Json::Value::Members::iterator itr = members.begin(); itr != members.end(); itr++)
 		{
 			Component* c = ComponentRegistry::createComponent(itr->c_str());
-			
+
 			if(c)
 			{
 				c->deserialize(data[itr->c_str()]);
