@@ -1,0 +1,41 @@
+//
+//  ComponentRegistry.hpp
+//  Artemis
+//
+//  Created by Sean on 7/23/13.
+//  Copyright (c) 2013 Mutant Eel. All rights reserved.
+//
+
+
+#ifndef Artemis_ComponentRegistry_hpp
+#define Artemis_ComponentRegistry_hpp
+
+#include <map>
+#include <string>
+#include <Artemis/Component.hpp>
+
+namespace artemis
+{
+
+	/**
+	 * The component registry is a place to register components by name. This allows components to be serializable
+	 * easily
+	 */
+	class ComponentRegistry
+	{
+			
+		public:
+			
+			static void registerComponent(std::string name, Component* component);
+			
+			static Component* createComponent(std::string name);
+		
+			static void reset();
+			
+		protected:
+			
+			static std::map<std::string, Component*> components;
+	};
+}
+
+#endif
