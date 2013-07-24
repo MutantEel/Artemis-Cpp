@@ -5,12 +5,10 @@ namespace artemis
 {
 	Component::Component()
 	{
-		
 	}
 	
 	Component::~Component()
 	{
-
 	}
 	
 	Component* Component::clone()
@@ -23,4 +21,7 @@ namespace artemis
 		return Json::nullValue;
 	}
 
+	void Component::deserialize(Json::Value data)
+	{
+	}
 };

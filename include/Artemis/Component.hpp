@@ -15,6 +15,7 @@ namespace artemis
 			virtual ~Component() = 0;
 			virtual Component* clone();
 			virtual Json::Value serialize();
+			virtual void deserialize(Json::Value data);
 		
 		protected:
 			Component();
@@ -35,6 +36,31 @@ return result; \
 }
 
 #define ARTEMIS_SERIALIZE(var) \
-result["##var"] = var;
+result[#var] = var;
+
+
+
+#define ARTEMIS_DESERIALIZE_START \
+public: virtual void deserialize(Json::Value data) \
+{\
+if(data.isNull())\
+{\
+return;\
+}
+
+
+#define ARTEMIS_DESERIALIZE_END \
+}
+
+//possible types are Bool, CString, Double, Float, Int, Int64, String, UInt, UInt64 
+#define ARTEMIS_DESERIALIZE(var, type, defaultValue) \
+if(data.isMember(#var) && data[#var].is##type())\
+{\
+var = data[#var].as##type();\
+}\
+else\
+{\
+var = defaultValue;\
+}
 
 #endif
