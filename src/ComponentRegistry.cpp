@@ -11,15 +11,21 @@
 namespace artemis
 {
 
-	void ComponentRegistry::registerComponent(std::string name, Component* component)
+	bool ComponentRegistry::registerComponent(Component* component)
 	{
+		if(component && component->getTypeName())
+		{
+			components[component->getTypeName()] = component;
+			return true;
+		}
 		
+		return false;
 	}
 		
 	
-	Component* ComponentRegistry::createComponent(std::string name)
+	Component* ComponentRegistry::createComponent(const char* name)
 	{
-		std::map<std::string, Component*>::iterator itr = components.find(name);
+		std::map<const char*, Component*>::iterator itr = components.find(name);
 		
 		if(itr != components.end())
 		{
@@ -31,12 +37,12 @@ namespace artemis
 		
 	void ComponentRegistry::reset()
 	{
-		for(std::map<std::string, Component*>::iterator itr = components.begin(); itr != components.end(); itr++)
+		for(std::map<const char*, Component*>::iterator itr = components.begin(); itr != components.end(); itr++)
 		{
 			delete itr->second;
 		}
 		components.clear();
 	}
 		
-	std::map<std::string, Component*> ComponentRegistry::components;
+	std::map<const char*, Component*> ComponentRegistry::components;
 }

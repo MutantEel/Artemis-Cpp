@@ -11,11 +11,14 @@
 
 using namespace artemis;
 
+
 class TestComp : public Component
 {
 	public:
 		int x;
 		int y;
+	
+	ARTEMIS_SERIALIZATION_SETUP(TestComp)
 
 	ARTEMIS_SERIALIZE_START
 		ARTEMIS_SERIALIZE(x)

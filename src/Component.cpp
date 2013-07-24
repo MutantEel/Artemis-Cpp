@@ -24,4 +24,9 @@ namespace artemis
 	void Component::deserialize(Json::Value data)
 	{
 	}
+	
+	const char* Component::getTypeName()
+	{
+		return NULL;
+	}
 };

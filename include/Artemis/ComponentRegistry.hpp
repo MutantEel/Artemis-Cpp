@@ -25,16 +25,22 @@ namespace artemis
 	{
 			
 		public:
+		
+			template<typename c>
+			static bool registerComponent()
+			{
+				return registerComponent(new c());
+			}
+		
+			static bool registerComponent(Component* component);
 			
-			static void registerComponent(std::string name, Component* component);
-			
-			static Component* createComponent(std::string name);
+			static Component* createComponent(const char* name);
 		
 			static void reset();
 			
 		protected:
 			
-			static std::map<std::string, Component*> components;
+			static std::map<const char*, Component*> components;
 	};
 }
 

@@ -9,6 +9,7 @@
 #include <Artemis/ImmutableBag.hpp>
 #include <Artemis/EntityManager.hpp>
 #include <Artemis/ComponentTypeManager.hpp>
+#include <Artemis/json.h>
 
 namespace artemis
 {
@@ -87,7 +88,8 @@ namespace artemis
 			void setGroup(std::string group);
 			void setTag(std::string tag);
 
-
+			Json::Value serialize();
+			void deserialize(Json::Value data);
 	};
 };
 #endif // $(Guard token)
