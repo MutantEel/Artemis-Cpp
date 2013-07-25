@@ -142,6 +142,38 @@ namespace artemis
 		return entityComponents;
 	}
 
+	Json::Value EntityManager::serialize()
+	{
+		Json::Value result;
+		int index = 0;
+		
+		for(int i = 0; i < activeEntities.getCapacity(); i++)
+		{
+			Entity* e = activeEntities.get(i);
+			
+			if(e)
+			{
+				result[index] = e->serialize();
+				index++;
+			}
+		}
+		
+		return result;
+	}
+	
+	void EntityManager::deserialize(Json::Value data)
+	{
+		if(data.isNull() || !data.isArray())
+		{
+			return;
+		}
+		
+		for(int i = 0; i < data.size(); i++)
+		{
+			Entity& e = create();
+			e.deserialize(data[i]);
+		}
+	}
 
 	bool EntityManager::isActive(int entityId)
 	{

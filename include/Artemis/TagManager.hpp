@@ -28,6 +28,7 @@ namespace artemis
 			bool isSubscribed(const std::string tag);
 			Entity& getEntity(const std::string tag);
 			void remove(Entity& e);
+			std::string tagForEntity(Entity& e);
 	};
 };
 #endif // $(Guard token)

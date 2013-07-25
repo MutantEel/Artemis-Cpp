@@ -34,6 +34,21 @@ namespace artemis
 		}
 
 	}
+	
+	std::string TagManager::tagForEntity(Entity& e)
+	{
+		std::map<std::string, Entity*>::iterator it;
+		
+		for (it = tagByEntity.begin(); it != tagByEntity.end(); ++it)
+		{
+			if(it->second == &e)
+			{
+				return it->first;
+			}
+		}
+		
+		return "";
+	}
 
 	void TagManager::unSubscribe(const std::string tag)
 	{

@@ -23,9 +23,9 @@ namespace artemis
 	}
 
 
-	Component* ComponentRegistry::createComponent(const char* name)
+	Component* ComponentRegistry::createComponent(std::string name)
 	{
-		std::map<const char*, Component*>::iterator itr = components.find(name);
+		std::map<std::string, Component*>::iterator itr = components.find(name);
 
 		if(itr != components.end())
 		{
@@ -38,7 +38,7 @@ namespace artemis
 
 	void ComponentRegistry::reset()
 	{
-		for(std::map<const char*, Component*>::iterator itr = components.begin(); itr != components.end(); itr++)
+		for(std::map<std::string, Component*>::iterator itr = components.begin(); itr != components.end(); itr++)
 		{
 			delete itr->second;
 		}
@@ -46,5 +46,5 @@ namespace artemis
 		components.clear();
 	}
 
-	std::map<const char*, Component*> ComponentRegistry::components;
+	std::map<std::string, Component*> ComponentRegistry::components;
 }

@@ -34,13 +34,13 @@ namespace artemis
 
 			static bool registerComponent(Component* component);
 
-			static Component* createComponent(const char* name);
+			static Component* createComponent(std::string name);
 
 			static void reset();
 
 		protected:
 
-			static std::map<const char*, Component*> components;
+			static std::map<std::string , Component*> components;
 	};
 }
 

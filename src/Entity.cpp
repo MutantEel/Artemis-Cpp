@@ -119,6 +119,22 @@ namespace artemis
 	{
 		ImmutableBag<Component*>& comps = getComponents();
 		Json::Value result;
+		
+		//save tag
+		std::string tag = world->getTagManager()->tagForEntity(*this);
+		
+		if(!tag.empty())
+		{
+			result["artemis_tag"] = tag;
+		}
+		
+		//save group
+		std::string group = world->getGroupManager()->getGroupOf(*this);
+		
+		if(!group.empty())
+		{
+			result["artemis_group"] = group;
+		}
 
 		//serialize all component
 		for(int i = 0; i < comps.getCount(); i++)
@@ -140,6 +156,18 @@ namespace artemis
 		{
 			return;
 		}
+		
+		//get tag
+		if(data.isMember("artemis_tag") && data["artemis_tag"].isString())
+		{
+			setTag(data["artemis_tag"].asString());
+		}
+		
+		//get group
+		if(data.isMember("artemis_group") && data["artemis_group"].isString())
+		{
+			world->getGroupManager()->set(data["artemis_group"].asString(), *this);
+		}
 
 		//create components and deserialize all members
 		Json::Value::Members members = data.getMemberNames();
@@ -154,6 +182,8 @@ namespace artemis
 				addComponent(c);
 			}
 		}
+		
+		refresh();
 	}
 
 	void Entity::setTypeBits(bitset<BITSIZE> typeBits)

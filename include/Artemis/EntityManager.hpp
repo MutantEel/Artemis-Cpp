@@ -5,7 +5,7 @@
 #include <Artemis/ImmutableBag.hpp>
 #include <Artemis/Component.hpp>
 #include <Artemis/ComponentTypeManager.hpp>
-
+#include <Artemis/json.h>
 
 namespace artemis
 {
@@ -51,6 +51,8 @@ namespace artemis
 
 			Bag<Component*>& getComponents(Entity& e);
 
+			Json::Value serialize();
+			void deserialize(Json::Value data);
 
 		private:
 			World* world;
