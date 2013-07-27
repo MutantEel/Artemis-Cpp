@@ -1,8 +1,8 @@
 #ifndef COMPONENTMAPPER_H
 #define COMPONENTMAPPER_H
 
-#include "EntityManager.h"
-#include "World.h"
+#include <Artemis/EntityManager.hpp>
+#include <Artemis/World.hpp>
 
 namespace artemis
 {

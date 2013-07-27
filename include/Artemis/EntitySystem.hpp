@@ -7,7 +7,6 @@
 #include <iostream>
 #include <assert.h>
 #include <typeinfo>
-#include <bitset>
 #include <Artemis/ImmutableBag.hpp>
 #include <Artemis/ComponentTypeManager.hpp>
 
