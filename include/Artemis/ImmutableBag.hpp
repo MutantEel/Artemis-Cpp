@@ -147,7 +147,7 @@ namespace artemis
 				{
 					if(o == data[i])
 					{
-						remove(i);
+						removeAt(i);
 						return true;
 					}
 				}
@@ -155,7 +155,7 @@ namespace artemis
 				return false;
 			};
 
-			E remove(int index)
+			E removeAt(int index)
 			{
 				if(count == 0)
 				{
